@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+html, body {
+  width: 100%;
+}
+body {
+  background-image: linear-gradient(-20deg, #94bbe9 0%, #eeaeca 100%);
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: darkslategray;
+}
+
+h1 {
+  font-size: 1.3rem;
+}
+h2 {
+  font-size: 1.1rem;
+}
+h3{
+  font-size: 1rem;
+}
+ul {
+  list-style: none;
+}
+.page {
+  width: 210mm;
+  height: 297mm;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+  /* border: 1px solid red;*/
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mica {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  border-left,border-top: -1px solid rgba(255, 255, 255, 0.9);
+  border-right,border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page::after {
+  content: "";
+  display: block;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 1%;
+  right: 10%;
+  z-index: -999;
+  background-color: rgba(11, 193, 238, 0.4);
+  box-shadow: 0 0 10rem rgba(11, 193, 238, 0.6);
+}
+.page::before {
+  content: "";
+  display: block;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 6%;
+  right: 0;
+  z-index: -996;
+  background-color: rgba(250, 26, 194, 0.3);
+  box-shadow: 0 0 10rem rgba(250, 26, 194, 0.6);
+}
+header {
+  width: 75%;
+  padding: 1rem;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img {
+    height: 10rem;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.6);
+  }
+  h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    opacity: 0.6;
+  }
+  li {
+    line-height: 1.5;
+  }
+}
+main {
+  width: 100%;
+}
+article {
+  margin: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-indent: 1rem;
+  padding-bottom: 1rem;
+      h3 {
+        margin-bottom: 0.5rem;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      p {
+        line-height: 1.6;
+        margin-bottom: 0.5rem;
+        color: #555;
+        text-indent: 2rem;
+      }
+      ul {
+        margin-left: 1rem;
+        padding-left: 0.5rem;
+      }
+        li {
+          margin-bottom: 0.5rem;
+          color: #666;
+        }
+   
+}
+article:first-child {
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 两列，每列占据50%宽度 */
+    grid-gap: 10px;
+    text-indent: 2rem;
+  }
+}
+article:last-child {
+  border: none;
+}
