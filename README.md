@@ -1,7 +1,7 @@
 ## 钱欣 <span class="titleEng">/QianXin</span>
 ## Java开发工程师 <span class="titleEng">/Java Software Engineer</span>
 ---
-<img src="E:/visual studio/zp/jl.jpg" align="right" height="150px" width="110px" />
+<img src="jl.jpg" align="right" height="150px" width="110px" />
 <i class="fas fa-envelope"></i> E-mail: 2841005765@qq.com
 
 <i class="fas fa-phone"></i> Phone: 15256632561
