@@ -15,6 +15,39 @@ body {
   color: darkslategray;
 }
 
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .page {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .mica {
+    border-radius: 0.5rem;
+  }
+}
+
+/* 打印样式 */
+@media print {
+  body {
+    font-size: 12pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    box-shadow: none;
+  }
+  .mica {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: none;
+    border: none;
+    page-break-inside: avoid;
+  }
+}
+
 h1 {
   font-size: 1.3rem;
 }
@@ -37,6 +70,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  
 }
 .mica {
   backdrop-filter: blur(10px);
